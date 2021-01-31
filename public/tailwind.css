@@ -5,18 +5,61 @@
 @layer base {
   body {
     @apply bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-50;
+    background-color: #000 !important;
   }
 
-  a {
+   a {
     @apply text-blue-500 dark:text-blue-400;
+    color: #ffc526 !important;
   }
+  
 }
+
 
 @layer components {
   .card {
     @apply p-4 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 shadow rounded-lg p-4 mb-2;
+    background-color: #101010 !important;
+    border-color:  #101010 !important;
+  }
+  
+  svg {
+    color: #FFF !important;
+  }
+  
+  .text-xs {
+    color: #B5B5BE;
+  }
+  
+  div.flex.flex-row.items-center input, div.flex.flex-row.items-center button {
+    visibility: hidden !important;
+  }
+  
+  div.absolute.inset-y-1.right-1.flex.z-1.items-center {
+    visibility: hidden !important;
+  }
+  .text-xl {
+    color: #B5B5BE !important;
+  }
+  
+  .bg-green-200 {
+    background-color: #101010 !important;
+    color: #f5c518 !important;
+  }
+  
+  .border-green-300 {
+    border-color: #101010 !important;
+  }
+  
+  
+  .text-gray-400 {
+    color: #727272 !important;
   }
 
+  .container {
+    width: 85%;
+  }
+  
   .pill {
     @apply px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full;
   }
@@ -33,15 +76,16 @@
     border-radius: 3.75px;
   }
   .bar {
-    @apply bg-gray-300 dark:bg-gray-600;
+/*     @apply bg-gray-300 dark:bg-gray-600; */
     padding-bottom: 1px;
     height: 100%;
     width: 85%;
     border-radius: 100px;
+    background-color: #1A1A1A;
   }
 
   .bar.green {
-    @apply bg-green-400 dark:bg-green-700;
+    background-color: #15803D !important;
   }
 
   .bar.red {
