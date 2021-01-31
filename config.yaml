@@ -16,23 +16,23 @@ settings:
 
 monitors:
   - id: main-site-movie
-    name: Wovie
-    description: 'Site principal.'
+    name: WOVIE
+    #description: ''
     url: 'https://zonimi.me/'
     method: GET
     expectStatus: 200
     followRedirect: false
 
   - id: main-player-movie
-    name: Servidor de filmes/séries 01
-    description: 'Este servidor é usado para stransmitir filmes e séries.'
+    name: SERVIDOR DE STREAMING 01
+    #description: ''
     url: 'https://play.zonimi.me'
     method: GET
     expectStatus: 200
 
   - id: server1-player-movie
-    name: Servidor de filmes/séries 02
-    description: 'Este servidor é usado para stransmitir filmes e séries.'
+    name: SERVIDOR DE STREAMING 02
+    #description: ''
     url: 'https://server-1.zonimi.me'
     method: GET
     expectStatus: 200
